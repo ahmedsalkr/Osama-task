@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Osama Task</title>
 
-
-
+    <!-- this is External style -->
+    <link rel="stylesheet" href="css1.css">
+    
+<!-- this is internal style -->
         <style>
         .switch {
         position: relative;
@@ -69,15 +72,19 @@
         }
         </style>
 
+        
+
 
 </head>
 <body>
 
-    
-    <form action="">
+    <p>this page for test</p> <!--in line style -->
 
-        <label for="username">enter your username please </label><br>
-        <input  autofocus required type="text" name="username" placeholder="for EX. Osama mostafa" id="password">
+    
+    <form action="" method="get" class="rigster"><!-- action=""for php send  -->
+
+        <label for="username" class="username">enter your username please </label><br>
+        <input  autofocus required type="text" name="username" placeholder="for EX. Osama mostafa" class="username">
             <br><br>
 
             <label for="age">Enter your Brithdate please</label> <br>
@@ -122,39 +129,38 @@
             
         <input type="submit" value="Submit"   name="submit" id="submit" >
         <br>
-        <br>
-
-        <!-- Rounded switch -->
-    <label class="switch">
-        <input type="checkbox">
-        <span class="slider round"></span>
-    </label>
-<hr>
-    <br>
-
-            <label for="sport">Select Your Favorite Sport </label><br>
-        <select name="sport" id="sport">
-            <optgroup label="Individual sports" >
-                <option value="1">Swimming</option>
-                <option value="2">Kickboxing</option>
-                <option value="3">Tennis</option>
-                <option value="4">Kongfou</option>
-            </optgroup>
-            <optgroup label="Team sports" >
-                <option value="1">Football</option>
-                <option value="2">Waterbolo</option>
-                <option value="3">Basketball</option>
-                <option value="4">Hoky</option>
-                <option value="5">Vollyball</option>
-                <option value="6">Handball</option>
-                
-            </optgroup>
-        </select>
-    
-        
-        
 
     </form>
+
+    <br>
+
+    <!-- Rounded switch -->
+<label class="switch">
+    <input type="checkbox">
+    <span class="slider round"></span>
+</label>
+<hr>
+<br>
+
+        <label for="sport">Select Your Favorite Sport </label><br>
+    <select name="sport" id="sport">
+        <optgroup label="Individual sports" >
+            <option value="1">Swimming</option>
+            <option value="2">Kickboxing</option>
+            <option value="3">Tennis</option>
+            <option value="4">Kongfou</option>
+        </optgroup>
+        <optgroup label="Team sports" >
+            <option value="1">Football</option>
+            <option value="2">Waterbolo</option>
+            <option value="3">Basketball</option>
+            <option value="4">Hoky</option>
+            <option value="5">Vollyball</option>
+            <option value="6">Handball</option>
+            
+        </optgroup>
+    </select>
+
     
 </body>
 </html>
