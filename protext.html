@@ -4,10 +4,11 @@
     
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Osama Task</title>
+    <title>Sakr Academy</title>
+    <link rel="icon" href="Sakr Academy Logo title.png" type="image/icon">
 
     <!-- this is External style -->
-    <link rel="stylesheet" href="css1.css">
+    <link rel="stylesheet" href="css0/css1.css">
     
 <!-- this is internal style -->
         <style>
@@ -49,11 +50,11 @@
         }
 
         input:checked + .slider {
-        background-color: #2196F3;
+        background-color: #21e5f3;
         }
 
         input:focus + .slider {
-        box-shadow: 0 0 1px #2196F3;
+        box-shadow: 0 0 1px #21f3f3;
         }
 
         input:checked + .slider:before {
@@ -78,28 +79,46 @@
 </head>
 <body>
 
-    <p>this page for test</p> <!--in line style -->
-
+    <header>
+        <a href="#" class="linkButton">Home</a>
+        <a href="#" class="linkButton">Programmes</a>
+        <a href="#" class="linkButton">About</a>
+        <a href="#" class="linkButton">Blog</a>
+    </header>
     
     <form action="" method="get" class="rigster"><!-- action=""for php send  -->
 
-        <label for="username" class="username">enter your username please </label><br>
-        <input  autofocus required type="text" name="username" placeholder="for EX. Osama mostafa" class="username">
-            <br><br>
+        <div> 
+            
+            <p class="pargraph">Welcome Sakr Academy Website </p> <!--in line style or in css or in head -->
+        </div>
 
-            <label for="age">Enter your Brithdate please</label> <br>
-            <input type="date">
 
-            <br><br>
+
+        <label for="username"  class="font-size"  >Enter your username please </label><br>
+        <input  autofocus 
+        required type="text" 
+        name="username" 
+        placeholder="for EX. Osama mostafa" 
+        class="username">
+        
+
+        <br>
         <label for="email">Enter your Email please</label><br>
-        <input required type="email"  placeholder="for Ex. Osamamostafa@hotmail.com" name="email" id="email">
-            <br><br>
+        <input 
+            required type="email"  
+            placeholder="for Ex.Osamamostafa@hotmail.com" 
+            name="email" 
+            id="email" 
+            >
+        <br>
             
         <label for="telphone Number">Enter your phone Number please</label>
-            <br>
-        <input type="number" name="telphone Number" id="tephone Number" placeholder="phone Number">
+        <br>
 
-            <br><br>
+        <input type="number" name="telphone Number" id="tephone" placeholder="phone Number">
+
+        <br>
         <label for="password1">Enter your password please </label><br>
         <input required 
         type="password"
@@ -120,30 +139,15 @@
         id="password2"
         pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
         onkeyup='check();'>
-            <br><br>
         
-        <label for="checkbox">i'm Not Reboot</label>
-        <input type="checkbox" name="checkbox" id="checkbox" >
-
-            <br>
-            
-        <input type="submit" value="Submit"   name="submit" id="submit" >
+        
         <br>
-
-    </form>
-
-    <br>
-
-    <!-- Rounded switch -->
-<label class="switch">
-    <input type="checkbox">
-    <span class="slider round"></span>
-</label>
-<hr>
-<br>
-
+        <label for="age">Enter your Brithdate please</label> <br>
+        <input type="date">
+        
+        <br>
         <label for="sport">Select Your Favorite Sport </label><br>
-    <select name="sport" id="sport">
+    <select name="sport" class="sport">
         <optgroup label="Individual sports" >
             <option value="1">Swimming</option>
             <option value="2">Kickboxing</option>
@@ -160,7 +164,58 @@
             
         </optgroup>
     </select>
+    <br>
+        
+        <label for="checkbox">I'm Not Reboot</label>
+        <input type="checkbox" name="checkbox" class="checkbox" >
+    <br>
+    <!-- Rounded switch -->
+        <label class="switch">
+            <input type="checkbox">
+            <div class="slider round"></div>
+        </label>
+
+        <br>
+        <input type="submit" value="Submit"   name="submit" id="submit" >
+        <br>
+
+
+
+    </form>
+      
+
+
 
     
+<br><hr>
+    
+
+    <!-- width and Height -->
+    <div class="width_Height">
+        https://www.youtube.com/watch?v=FQLRSbVdk28&list=PLDoPjvoNmBAzjsz06gkzlSrlev53MGIKe&index=17
+        Lorem ipsum dolor sit amet,
+        consectetur adipisicing elit. 
+        Assumenda doloremque aliquid odio. 
+        Tenetur quo veniam rerum impedit non architecto autem temporibus sed,
+        sit vitae quidem ad aliquid debitis possimus ea.
+        
+    </div>
+
+    <!-- <div class="display"> Display Test</div> -->
+
+    <!-- nesting -->
+    <!-- <div>
+        <p class="nesting">nesting</p>   
+    </div> -->
+
+    <!-- <p class="nesting">nesting</p>
+
+    <div class="one">1111</div>
+    <div class="two">22 <img src="2.PNG" alt=""> 22</div>
+    <div class="three">3333</div>
+    <div class="fuor">4444</div>
+    <div class="five">5555</div> -->
+
+
 </body>
 </html>
