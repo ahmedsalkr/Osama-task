@@ -32,13 +32,19 @@
   /* list-style: none; */
   /* content: '\f0d7'; */
 
+  
 
 
 }
 
+a:hover{
+  color: black;
+  background-color: wheat;
+}
+
 body {
 
-  background-image: url(/falcon-clip-art-AR13-FALCON-01-RQ_G.gif);
+  background-image: url(/falcon-clip-art-AR13-FALCON-01-RQ_G.gif) ;
   /* image no  repeat  */
   background-repeat: no-repeat;
   background-size: 200px;
@@ -67,6 +73,8 @@ body {
   outline-offset: 0px;
   outline-color: rgb(247, 208, 208);
 
+  
+
   /*  frist% is left 2cend is top */
   /* padding: 10px 10px 0px 10px; */
   /* margin: 10px 10px 0px 20px; */
@@ -81,11 +89,17 @@ body {
 }
 
 
+
+.rigster{
+  border-color: aqua gray rgba(255, 174, 0, 0.582) purple;
+}
+
 /* Nesting */
 div p.pargraph {
 
-  display: inline-block;
+  display:inline-block;
   font-size: 30px;
+  /* font-size: 10vw; */
   /* font color  */
   color: brown;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -94,6 +108,8 @@ div p.pargraph {
   border-width: 7px 7px 7px 7px;
   border-radius: 30px;
   padding: 1%;
+  text-align: center;
+  
   margin: 20px 10px 20px 380px;
   text-shadow: 5px 9px 5px coral;
   text-transform: uppercase;
@@ -111,8 +127,9 @@ div p.pargraph {
 
 label {
 
-
-  font-size: medium;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+  font-size: 16px;
+  font-weight: bold;
   color: brown;
   /* background-color: greenyellow; */
   text-align: center;
@@ -130,13 +147,12 @@ label {
   margin-bottom: 20px;
 }
 
-input,
-.sport {
+input,.sport {
 
   color: brown;
   border: 1px;
   border-style: solid;
-  border-color: aqua gray rgba(255, 174, 0, 0.582) purple;
+  border-color: inherit; /* inherit from father is name rigster */
   border-radius: 30px;
   padding: 1%;
   border-width: 5px;
@@ -153,12 +169,23 @@ input,
   text-transform: uppercase;
 
 }
+.sport:hover{
+  color: rgb(34, 33, 33);
+  background-color: rgb(245, 242, 242);
+}
+
+
+
 
 #submit {
-  background-color: rgb(146, 240, 209);
+  background-color: rgb(14, 3, 53);
   font-size: large;
   text-transform: uppercase;
 
+}
+#submit:hover{
+  color: rgb(34, 33, 33);
+  background-color: rgb(245, 242, 242);
 }
 
 /* .font-size{
